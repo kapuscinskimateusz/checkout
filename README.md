@@ -6,4 +6,5 @@ Kliknięcie w przycisk z treścią "Logowanie" wyświetla popup dla panelu logow
 
 W projekcie założono, że w przyszłości, aby ułatwić pracę klientowi, wszystko będzie mógł edytować w panelu administratora.
 
-![Alt text](/relative/path/to/checkout.png?raw=true)
+
+![checkout](https://user-images.githubusercontent.com/76912980/134102203-226542a6-83ee-4427-9d88-2105bb57f27f.PNG)
