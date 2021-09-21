@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: arial, sans-serif;
+  font-size: 10px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+form .login-demo button {
+  width: 100%;
+}
+
+form .login-demo p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form .col {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 0 10px;
+}
+
+form .col.col-1 button, form .col.col-2 button {
+  padding: 10px;
+}
+
+form .col.col-1 button {
+  color: #e54444;
+  border: 2px solid #e54444;
+}
+
+form .col.col-1 button:hover {
+  color: white;
+  background-color: #e54444;
+}
+
+form .col.col-2 button {
+  margin-top: 0;
+  color: #a89f8f;
+  border: 2px solid #a89f8f;
+}
+
+form .col.col-2 button:hover {
+  color: white;
+  background-color: #a89f8f;
+}
+
+form .col.col-2 fieldset {
+  border: none;
+}
+
+form .col.col-2 fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+form .col.col-2 fieldset div:last-of-type {
+  margin: 0;
+}
+
+form .col.col-2 fieldset div span {
+  margin-left: auto;
+}
+
+form .col.col-2 fieldset div img {
+  margin: 0 10px;
+  width: 40px;
+}
+
+form .col.col-3 button {
+  padding: 20px 10px;
+  text-transform: uppercase;
+  background-color: #e54444;
+  color: white;
+  border: none;
+}
+
+form .col.col-3 .summary {
+  padding: 10px 0;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+  margin-bottom: 20px;
+}
+
+form .col.col-3 .summary div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form .col.col-3 .summary div:last-child {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form .col.col-3 textarea {
+  width: 100%;
+  padding: 8px;
+  resize: none;
+}
+
+form .col section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .col .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+form .col .product .img {
+  width: 80px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+form .col .product .img img {
+  display: block;
+  max-width: 100%;
+}
+
+form .col .product .product-about {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+form .col .product .product-about div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form h2 {
+  padding: 10px;
+  background-color: #a89f8f;
+  color: white;
+  text-transform: uppercase;
+}
+
+form h2 i {
+  margin-right: 10px;
+}
+
+form button {
+  margin: 10px 0;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+form .registration {
+  display: none;
+}
+
+form .registration.active {
+  display: block;
+}
+
+form .other-address-panel {
+  display: none;
+}
+
+form .other-address-panel.active {
+  display: block;
+}
+
+form .form-control {
+  margin-bottom: 20px;
+}
+
+form .form-control.hidden {
+  display: none;
+}
+
+form .form-control input[type="text"],
+form .form-control input[type="tel"],
+form .form-control input[type="password"],
+form .form-control select {
+  width: 100%;
+  padding: 8px;
+}
+
+form .form-control p.error {
+  margin-top: 10px;
+  display: none;
+  color: red;
+}
+
+form .form-control.error p.error {
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+
+.background.active {
+  display: block;
+}
+
+.background .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 80%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.background .popup .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.background .popup .panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  max-width: 300px;
+}
+
+.background .popup .panel input {
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+.background .popup .panel button.login {
+  padding: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #5cb85c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+
+.popup-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: none;
+}
+
+.popup-background.active {
+  display: block;
+}
+
+.popup-background .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-background .popup .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.popup-background .popup div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+  width: 80%;
+}
+
+.popup-background .popup div input {
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.popup-background .popup div button {
+  padding: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=style.css.map */
