@@ -154,7 +154,7 @@ const FormSubmit = () => {
     if (zipCodeValue === "") {
       setErrorFor(zipCode, "Kod pocztowy jest wymagany.");
     } else if (!isZipCode(zipCodeValue)) {
-      setErrorFor(zipCode, "Wprowadzono błędny kod pocztowy.");
+      setErrorFor(zipCode, "Wprowadzono błędny kod pocztowy. Poprawny format to np. 45-013.");
     } else {
       setSuccessFor(zipCode);
     }
@@ -168,7 +168,7 @@ const FormSubmit = () => {
     if (phoneValue === "") {
       setErrorFor(phone, "Numer telefonu jest wymagany.");
     } else if (!isPhoneNumber(phoneValue)) {
-      setErrorFor(phone, "Wprowadzono błędny numer telefonu.");
+      setErrorFor(phone, "Wprowadzono błędny numer telefonu. Poprawny format to np. 330622986");
     } else {
       setSuccessFor(phone);
     }
